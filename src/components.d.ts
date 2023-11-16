@@ -7,11 +7,24 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    CreateApp: typeof import('./components/CreateApp.vue')['default']
+    CreateCredential: typeof import('./components/CreateCredential.vue')['default']
+    CreateUser: typeof import('./components/CreateUser.vue')['default']
+    EnterToApp: typeof import('./components/EnterToApp.vue')['default']
+    FormAppCopy: typeof import('./components/FormApp-copy.vue')['default']
+    InfoApp: typeof import('./components/InfoApp.vue')['default']
+    InfoCredential: typeof import('./components/InfoCredential.vue')['default']
+    InfoUser: typeof import('./components/InfoUser.vue')['default']
+    ProfileTools: typeof import('./components/ProfileTools.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheCounter: typeof import('./components/TheCounter.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
+    Time: typeof import('./components/Time.vue')['default']
+    UpdateApp: typeof import('./components/UpdateApp.vue')['default']
+    UpdateCredential: typeof import('./components/UpdateCredential.vue')['default']
+    UpdateUser: typeof import('./components/UpdateUser.vue')['default']
   }
 }

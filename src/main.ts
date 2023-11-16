@@ -10,6 +10,11 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
+// new
+import '@quasar/extras/material-icons/material-icons.css'
+import 'quasar/src/css/index.sass'
+
+// new
 const routes = setupLayouts(generatedRoutes)
 
 // https://github.com/antfu/vite-ssg

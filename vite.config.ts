@@ -16,6 +16,10 @@ import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 import WebfontDownload from 'vite-plugin-webfont-dl'
 
+// new
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
+
+// new
 export default defineConfig({
   resolve: {
     alias: {
@@ -28,9 +32,19 @@ export default defineConfig({
       plugins: {
         vue: Vue({
           include: [/\.vue$/, /\.md$/],
+          // new
+          template: {
+            transformAssetUrls,
+          },
+          // new
         }),
       },
     }),
+    // new
+    quasar({
+      sassVariables: 'src/styles/quasar-vars.sass',
+    }),
+    // new
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
